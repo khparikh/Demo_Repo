@@ -19,7 +19,6 @@ pipeline {
         }
         stage('Hello') {
             steps {
-                echo "Hello World!"
                 echo "This is build number $BUILD_NUMBER running in folder $WORKSPACE"
                 sh("ls -altr")
             }
